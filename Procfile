@@ -1,0 +1,1 @@
+web: gunicorn helloyadhu.wsgi
