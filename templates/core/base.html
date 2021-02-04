@@ -1,0 +1,188 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Yadhu Krishna</title>
+        <meta name="theme-color" content="#8E2DE2">
+      
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="{%static ''%}core/css/style.css">
+        <link rel="stylesheet" href="{%static ''%}core/css/responsive.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+      
+      
+
+
+    {%block css%}
+
+    {%endblock%}
+
+</head>
+<body>
+
+
+
+
+
+
+
+    <section class="d-none d-lg-block d-xl-block desk-nav">
+        <header class="header" id="navi">
+          <div class="container">
+            <nav class="bottom-nav">
+              <div class="bottom-nav-item">
+                <a {% if request.path == "/" %} class="active" {%else%}{%endif%} href="{%url 'home'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-house-user"></i>
+                    <span>Home</span>
+                  </div>
+                </a>
+              </div>
+    
+    
+              <div class="bottom-nav-item">
+                <a {% if 'about' in request.path %} class="active"{%endif%}  href="{%url 'about'%}" style="text-decoration: none" onclick="about()">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-address-card"></i>
+                    <span>About</span>
+                  </div>
+                </a>
+              </div>
+    
+    
+    
+              <div class="bottom-nav-item">
+                <a {% if 'skills' in request.path %} class="active"{%endif%} href="{%url 'skills'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Skills</span>
+                  </div>
+                </a>
+              </div>
+    
+              <div class="bottom-nav-item">
+                <a {% if 'contact' in request.path %} class="active"{%endif%} href="{%url 'contact'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-comments"></i>
+                    <span>Contact</span>
+                  </div>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </header>
+    
+      </section>
+    
+
+
+
+
+
+
+
+
+
+	{%block content%}
+
+	{%endblock%}
+
+
+
+
+
+    <section class="d-lg-none d-xl-none mob-nav">
+        <header class="header" id="Header">
+          <div class="container">
+            <nav class="bottom-nav">
+              <div class="bottom-nav-item ">
+                <a {% if request.path == "/" %} class="active" {%else%}{%endif%} href="{%url 'home'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-house-user"></i>
+                    <span>Home</span>
+                  </div>
+                </a>
+              </div>
+    
+    
+    
+              <div class="bottom-nav-item">
+                <a {% if 'about' in request.path %} class="active"{%endif%} href="{%url 'about'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-address-card"></i>
+                    <span>About</span>
+                  </div>
+                </a>
+              </div>
+    
+    
+              <div class="bottom-nav-item">
+                <a {% if 'skills' in request.path %} class="active"{%endif%} href="{%url 'skills'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Skills</span>
+                  </div>
+                </a>
+              </div>
+    
+    
+    
+              <div class="bottom-nav-item">
+                <a {% if 'contact' in request.path %} class="active"{%endif%} href="{%url 'contact'%}" style="text-decoration: none">
+                  <div class="bottom-nav-link">
+                    <i class="fas fa-comments"></i>
+                    <span>Contact</span>
+                  </div>
+                </a>
+              </div>
+    
+            </nav>
+          </div>
+        </header>
+      </section>
+
+
+
+
+
+	{%block js%}
+
+	{%endblock%}
+
+
+    
+    
+      <!-- jQuery ,Popper.js, Bootstrap JS -->
+    
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+    <script src="{%static ''%}core/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+    
+</body>
+
+</html>
