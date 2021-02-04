@@ -146,6 +146,8 @@ EMAIL_HOST_PASSWORD = 'July@2019123'
 # EMAIL_USE_TLS = False
 DEFAULT_FROM_EMAIL = '<yadhukrishnacs7195@gmail.com>'
 
+GMAIL_SMTP_USER= "yadhukrishnacs7195@gmail.com"
+GMAIL_SMTP_PASSWORD= 'July@2019123'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
