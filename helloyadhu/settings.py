@@ -147,6 +147,10 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'yadhukrishnacs7195@gmail.com'
 EMAIL_HOST_PASSWORD = 'ufxzzolmsekjmtrk'
 
+# recaptha
+
+RECAPTCHA_PUBLIC_KEY = '6Ld1tOQUAAAAADNy4qJuHTO9q-cUF2gztjOU7hln'
+RECAPTCHA_PRIVATE_KEY = '6Ld1tOQUAAAAAOckRtgBlvnCILoYO3lzzNcBTOYQ'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())

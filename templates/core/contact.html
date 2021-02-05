@@ -1,6 +1,6 @@
 {%extends 'core/base.html'%}
 
-{%block title%} {%endblock%}
+{%block title%}Contact-{%endblock%}
 
 {%load static%}
 
@@ -14,7 +14,7 @@
 
     <div class="row h-100">
 
-      <div class="col-sm-12 my-auto">
+      <div class="col-sm-12" style="margin-top: 7%;">
         <div class="card">
 
           <div class="card-body" style="padding: 4%;">
@@ -47,14 +47,24 @@
                         <label for="inputEmail4">Subject</label>
                         <input type="text" class="form-control" name="subject" id="inputSubj" required>
                       </div>
-                      
+                      <div class="form-group col-md-12">
+                        <label for="Message">Message</label>
+                        <textarea class="form-control" id="Message" name="message" rows="3" required></textarea>
+                      </div>
+                     
+          
+  
+                      <div class="form-group col-md-6">
+                        <div class="g-recaptcha" data-sitekey="6Ld1tOQUAAAAADNy4qJuHTO9q-cUF2gztjOU7hln"></div>
+                      </div>
+  
+                      <div class="form-group cnt-sbmt col-md-6">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label for="Message">Message</label>
-                      <textarea class="form-control" id="Message" name="message" rows="3" required></textarea>
-                    </div>
-              
-                    <button type="submit" class="btn btn-primary">Submit</button>
+               
+                    
+                  
                   </form>
 
 
@@ -115,6 +125,7 @@
   {%block js%}
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         $('#contact-form').submit(function (ev) {
