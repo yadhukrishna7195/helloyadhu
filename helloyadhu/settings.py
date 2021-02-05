@@ -149,8 +149,8 @@ EMAIL_HOST_PASSWORD = 'ufxzzolmsekjmtrk'
 
 # recaptha
 
-RECAPTCHA_PUBLIC_KEY = '6Ld1tOQUAAAAADNy4qJuHTO9q-cUF2gztjOU7hln'
-RECAPTCHA_PRIVATE_KEY = '6Ld1tOQUAAAAAOckRtgBlvnCILoYO3lzzNcBTOYQ'
+RECAPTCHA_PUBLIC_KEY = '6LeCa0saAAAAAFsL8VOkr7SyxiI-EK6iFDFsuGwF'
+RECAPTCHA_PRIVATE_KEY = '6LeCa0saAAAAANpB2ULyqpgMikhyIaVzTGbULJGw'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
