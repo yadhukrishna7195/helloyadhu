@@ -1,0 +1,63 @@
+{%extends 'email/base.html'%}
+{%block title%}Enquiry Form{%endblock%}
+{%block content%}
+{% autoescape off %}
+<span class="preheader">Enquiry Form</span>
+
+           
+            <table class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  
+  <p>Hello sir, You have one enquiry from {{e.name}}</p>
+
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    
+                        
+                        
+                        <table>
+                          
+
+   <tr>
+        <th><b>Name</b> </th>
+        <th><b>Email</b> </th>
+        <th><b>Phone</b> </th>
+        <th><b>Subject </b> </th>
+   
+       
+         <th><b>Message </b> </th>
+
+        </tr>
+
+        <tr>
+
+        <td>{{e.name}}</td>
+        <td>{{e.email}}</td>
+        <td>{{e.phone}}</td>
+        <td>{{e.subject}}</td>
+  
+         
+        <td>{{e.message}}</td>
+       
+       </tr>
+
+
+
+                        </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                       
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+            <!-- END MAIN CONTENT AREA -->
+            </table>
+{% endautoescape %}
+{%endblock%}

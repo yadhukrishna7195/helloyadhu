@@ -1,0 +1,189 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1025px) {
+
+    .mob-nav .header .container {
+        max-width: 80rem;
+        width: 100%;
+        height: auto;
+        padding: 0 2rem;
+        margin: 0 auto;
+      }
+      
+.mob-nav .header .bottom-nav {
+        display: -webkit-box;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 0.8rem 0;
+        background-color:  #ffffff;
+        z-index: 99;
+        will-change: transform;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+      }
+
+
+.mob-nav .header .bottom-nav-item {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-flex: 1;
+                flex-grow: 1;
+        -webkit-box-pack: center;
+                justify-content: center;
+        text-align: center;
+        font-size: 0.8rem;
+        color: #f1f5f8;
+      }
+
+
+
+   .mob-nav .header .bottom-nav-link {
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+      }
+      
+      
+      /* .mob-nav .header .bottom-nav .active {
+        color: #fffc00;;
+      }
+      
+     */
+
+     .contact-rt-box{
+
+      margin-left: 0%;
+      margin-top: 8%;
+  }
+
+  .social{
+    margin-bottom: 24%;
+  }
+
+}
+
+
+
+/* Tablet and up */
+
+@media screen and (min-width: 768px) {
+        .carousel-inner .active,
+        .carousel-inner .active+.carousel-item {
+          display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item {
+          -webkit-transition: none;
+          transition: none;
+        }
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+          position: relative;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+          position: absolute;
+          top: 0;
+          right: -50%;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+        }
+        /* left or forward direction */
+        .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left+.carousel-item {
+          position: relative;
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+        /* farthest right hidden item must be abso position for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+        }
+        /* right or prev direction */
+        .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right+.carousel-item {
+          position: relative;
+          -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+        }
+      }
+      
+      /* Desktop and up */
+      
+      @media screen and (min-width: 992px) {
+        .carousel-inner .active,
+        .carousel-inner .active+.carousel-item,
+        .carousel-inner .active+.carousel-item+.carousel-item {
+          display: block;
+        }
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item {
+          -webkit-transition: none;
+          transition: none;
+        }
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+          position: relative;
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item {
+          position: absolute;
+          top: 0;
+          right: -33.3333%;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+        }
+        /* left or forward direction */
+        .active.carousel-item-left+.carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left+.carousel-item,
+        .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
+        .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item {
+          position: relative;
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+          visibility: visible;
+        }
+        /* farthest right hidden item must be abso position for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+          display: block;
+          visibility: visible;
+        }
+        /* right or prev direction */
+        .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right+.carousel-item,
+        .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
+        .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item {
+          position: relative;
+          -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+          visibility: visible;
+          display: block;
+          visibility: visible;
+        }
+      }

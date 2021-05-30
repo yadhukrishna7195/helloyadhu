@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    html, body {
+        height: 100%;
+        background: #8E2DE2;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+    }
+    
+    /* CSS only for examples not required for centering */
+    .container {
+        height: 100%;
+    }
+
+.card{
+
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    /* filter: blur(0.2px); */
+    border-width: 0.1px;
+    border-style: solid;
+    border-color:rgb(255 255 255 / 65%)
+
+}
+
+
+.card-body {
+    padding: 17%;
+}
+
+#skill .card-body {
+    padding: 7%;
+}
+
+.card-title{
+
+    font-size: 41px;
+    font-weight: bold;
+}
+
+
+.desk-nav .container{
+    
+
+    max-width: 80rem;
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.desk-nav .header .bottom-nav {
+    display: -webkit-box;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 0.8rem 0;
+    background-color:  #ffffff;
+    z-index: 99;
+    will-change: transform;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+  }
+    
+.desk-nav .header .bottom-nav-item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+            flex-grow: 1;
+    -webkit-box-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #f1f5f8;
+  }
+
+
+  .desk-nav .header .bottom-nav-link {
+       display: -webkit-box;
+       display: flex;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+               flex-direction: column;
+     }
+
+
+
+/* nav active */
+
+.active, a:hover {
+    color: #000000;
+   
+}
+
+
+/* social */
+
+
+.social span .fab{
+    font-size: 50px!important;
+}
+
+
+
+
+
+#myCarousel p,#myCarousel h6,#myCarousel h4,#myCarousel ul li,#myCarousel ul li a{
+    color: #fff!important
+}
+
+
+#about img{width: 91%;}
+
+
+#myCarousel .card{
+
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    /* filter: blur(0.2px); */
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.425);
+
+}
+
+
+#myCarousel .card-body {
+    padding: 10%;
+}
+
+.btn-outline-secondary {
+    color: #dadada;
+    border-color: #ffffff61;
+}
+
+.btn-outline-secondary:hover {
+    color: #f9f9f9;
+    background-color: #ffffff7d;
+    border-color: #c7c7c7bf;
+}
+/* downlod resum button */
+
+.dw-btn{
+    z-index: 1;
+    position: absolute;
+    left: 54%;
+    padding-top: 21%;
+}
+
+.dw-btn .btn-danger {
+    color: #000;
+    background-color: #ffffffbd;
+    border-color:  #ffffffbd;
+}
+
+.btn-mob{
+    color: #000;
+    background-color: #ffffffbd;
+    border-color:  #ffffffbd;
+}
+
+/* 
+contact area */
+
+
+
+.contact-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background: rgba(250,250,250,0.25);
+    border-radius: 10px;
+    padding: 28px;
+    font-weight: 700;
+}
+
+
+.contact-row i {
+width: 55px;
+font-size: 30px;
+display: block;
+}
+
+.contact-rt-box{
+
+
+    margin-left: 8%;
+
+}
+
+#contact .btn-primary {
+    color: #fff;
+    background-color: #ffffff1c;
+    border-color: #ffffff94;
+}
+
+
+.circles{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        pointer-events: none;
+    }
+    
+    .circles li{
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: #fffc00;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+        
+    }
+    
+    .circles li:nth-child(1){
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+
+    }
+    
+    
+    .circles li:nth-child(2){
+        left: 10%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+    }
+    
+    .circles li:nth-child(3){
+        left: 70%;
+        width: 30px;
+        height: 30px;
+        animation-delay: 4s;
+    }
+    
+    .circles li:nth-child(4){
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+    }
+    
+    .circles li:nth-child(5){
+        left: 65%;
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        animation-delay: 0s;
+    }
+    
+    .circles li:nth-child(6){
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+    }
+    
+    .circles li:nth-child(7){
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+        animation-delay: 7s;
+    }
+    
+    .circles li:nth-child(8){
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+    }
+    
+    .circles li:nth-child(9){
+        left: 20%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+    }
+    
+    .circles li:nth-child(10){
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        font-size: 40px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+    }
+    
+    
+    
+    @keyframes animate {
+    
+        0%{
+            transform: translateY(0) rotate(0deg);
+            opacity: 1;
+            border-radius: 0;
+        }
+    
+        100%{
+            transform: translateY(-1000px) rotate(720deg);
+            opacity: 0;
+            border-radius: 50%;
+        }
+    
+    }
+
+
+
+
+/* 
+
+    skills */
+
+
+
+    .progress-bar {
+      
+      color: #000000bf;
+      background-color: #fffc00;
+  
+  }
+
+
+  #b .card-body {
+    padding: 12%;
+}
+
+
+
+
+
+
+/* About card */
+
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none!important;
+}
